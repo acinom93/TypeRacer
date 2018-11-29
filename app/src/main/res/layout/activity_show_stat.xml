@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carsstats"
+    tools:context=".ShowStat">
+
+    <!--
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/errorGraph"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp" />
+        -->
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/accurecy_graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/stats"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/stats" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:fontFamily="cursive"
+        android:text="You Won"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/amazonb"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        android:text='Race Text was from "Harry Potter and Deathly Hallows". Buy Now !'
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bookname"
+        android:layout_alignParentStart="true"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/amazonb"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/amazonlogo"
+        android:onClick="onAmazonClick" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@+id/accurecy_graph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/background_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="onRaceClick"
+        android:text="Race Again"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+</RelativeLayout>

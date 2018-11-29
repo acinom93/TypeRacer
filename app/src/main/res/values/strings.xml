@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TRACER</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Error">Error while typing</string>
+    <string name="app_id">113725402652</string>
+</resources>
